@@ -11,6 +11,10 @@ Route::get('/', function () {
     return 'Home';
 });
 
+Route::get('/usuarios', function () {
+    return 'Usuarios';
+});
+
 Route::get('/usuarios/{id}', function ($id) {
     return 'Obteneiendo id: ' . $id;
 })->where('id', '[0-9]+');
